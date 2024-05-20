@@ -21,7 +21,7 @@ public class UserController {
 
     @GetMapping("{id}")
     public UserResponse get(@PathVariable Long id) {
-        return service.delete(id);
+        return service.get(id);
     }
 
     @DeleteMapping("{id}")
